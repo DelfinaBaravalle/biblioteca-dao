@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Biblioteca · Red de sedes</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+  <script src="{{ url_for('static', filename='app.js') }}" defer></script>
+</head>
+<body>
+  <aside>
+    <a class="marca" href="#inicio">Biblioteca<small>Red de sedes</small></a>
+    <nav aria-label="Menú principal" id="menu"></nav>
+    <footer>TP integrador de Desarrollo de Aplicaciones con Objetos, UTN FRC</footer>
+  </aside>
+  <main>
+    <header><span>Biblioteca / <span id="ruta">Inicio</span></span><span class="conexion" id="conexion">Conectando…</span></header>
+    <div id="aviso" role="status" aria-live="polite" hidden></div>
+    <section id="contenido" aria-label="Área de trabajo"></section>
+  </main>
+</body>
+</html>
